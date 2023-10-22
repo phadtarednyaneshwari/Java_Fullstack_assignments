@@ -1,0 +1,24 @@
+import java.util.*;
+
+@FunctionalInterface
+
+interface SI{
+    void SimpleInterest();
+}
+
+public class FuncIntrFace{
+    public static void main(String args[]){
+        
+        SI s=()->{
+            int P,R,T;
+            float Ans;
+            Scanner sc=new Scanner(System.in);
+            P=sc.nextInt();
+            R=sc.nextInt();
+            T=sc.nextInt();
+            Ans=(P*R*T)/100;
+            System.out.println(Ans);
+        };
+        s.SimpleInterest();
+    }
+}
